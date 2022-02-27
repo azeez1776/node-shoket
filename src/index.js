@@ -10,7 +10,8 @@ const makePayment = async(api_key, amount, customer_name, email, number_used, ch
                 email:email,
                 number_used:number_used,
                 channel:channel
-            })
+            }),
+            headers:{'Authorization': 'Bearer '+ api_key, "Content-Type":"application/json"}
         })
     }
 }
