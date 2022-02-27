@@ -20,4 +20,8 @@ const makePayment = async(api_key, amount, customer_name, email, number_used, ch
     }catch(err){
         console.log(err)
     }
-}
+};
+
+module.exports={
+    makePayment
+};
