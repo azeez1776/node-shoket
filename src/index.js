@@ -1,7 +1,7 @@
-// const fetch = require('node-fetch');
-import fetch from 'node-fetch';
+const fetch = require('node-fetch');
+// import fetch from 'node-fetch';
 
-export const makePayment = async(api_key, amount, customer_name, email, number_used, channel) => {
+const makePayment = async(api_key, amount, customer_name, email, number_used, channel) => {
 
     try{
         const response = await fetch('https://api.shoket.co/v1/charge/',{
@@ -23,6 +23,6 @@ export const makePayment = async(api_key, amount, customer_name, email, number_u
     }
 };
 
-// module.exports={
-//     makePayment
-// };
+module.exports={
+    makePayment
+};

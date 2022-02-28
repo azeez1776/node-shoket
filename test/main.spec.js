@@ -1,7 +1,7 @@
-// const {makePayment} = require('../src/index');
-// const {isFunction} = require('lodash');
+const {makePayment} = require('../src/index');
+const {isFunction} = require('lodash');
 // import {makePayment} from '../src/index';
-import {isFunction} from 'lodash';
+// import {isFunction} from 'lodash';
 
 describe('testing the makePayment function', () => {
     test('testing if is a function', () => {

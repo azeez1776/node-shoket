@@ -1,23 +1,13 @@
 {
   "name": "node-shoket",
   "version": "1.0.0",
-  "type": "module",
   "description": "",
   "main": "./src/index.js",
   "scripts": {
     "test": "jest"
   },
   "jest": {
-    "verbose": true,
-    "testURL": "http://localhost/",
-    "testEnvironment": "node",
-    "setupFilesAfterEnv": [
-      "./setupTests.js"
-    ],
-    "testPathIgnorePatterns": [
-      "dist/"
-    ],
-    "restoreMocks": true
+    "verbose": true
   },
   "keywords": [],
   "author": "Abdulaziz(Samatar) Abdi",
