@@ -18,6 +18,7 @@ const makePayment = async(api_key, amount, customer_name, email, number_used, ch
 
         const data = await response.json();
         console.log(data);
+        return data;
     }catch(err){
         console.log(err)
     }
