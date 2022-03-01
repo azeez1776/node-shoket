@@ -26,7 +26,16 @@ const makePayment = async(api_key, amount, customer_name, email, number_used, ch
 
 const verifyPayment = async() => {
     try{
-        const response = await fetch(`https://api.shoket.co/v1/verify/${reference}`);
+        const response = await fetch(`https://api.shoket.co/v1/verify/${reference}`,{
+            method:'get',
+            headers:{'Authorization': 'Bearer '+ api_key, "Content-Type":"application/json"}
+        });
+
+        const data = await response.json();
+        console.log(data);
+        return data;
+    }catch(err){
+        console.log(err)
     }
 }
 
