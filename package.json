@@ -1,7 +1,7 @@
 {
   "name": "node-shoket",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple node wrapper for the shoket payment API, for more information on the API visit Shoket Official website.",
   "main": "./src/index.js",
   "scripts": {
     "test": "jest"
