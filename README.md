@@ -35,7 +35,7 @@ npm test
 
 ## Documentation
 The makePayment function is used to accept payments, the function has 6 parameters which are API_KEY, amount, customer_name, email, number_used and channel. 
-The parameters as follows in the function:
+The parameters are as follows in the function:
 ```js
 makePayment(API_KEY, amount, customer_name, email, number_used, channel);
 ```
@@ -47,6 +47,16 @@ makePayment(API_KEY, amount, customer_name, email, number_used, channel);
 | Email           | Yes      | This is a customer Email                                                                                    |
 | Channel         | Yes      | Mobile-provider name which is used by the customer phone number.                                            |
 | Customer names  | Yes      | This is a customer full name                                                                                |
+
+The verifyPayment is used to verify the transaction conducted, the function has 2 parameters which are the API_KEY and the transaction reference. The parameters are arranged as follows:
+
+```js
+verifyPayment(API_KEY, transaction_reference);
+```
+| Parameter             | Required | Description                                                                                                 |
+|-----------------------|----------|-------------------------------------------------------------------------------------------------------------|
+| API_KEY               | Yes      | This is the secret API key given on registering at the [Shoket Official site](https://dashboard.shoket.co/) |
+| Transaction Reference | Yes      | This is the reference of the transaction performed already.                                                 |
 
 ## Contributing
 
