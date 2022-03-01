@@ -24,7 +24,7 @@ const {makePayment, verifyPayment} = require('node-shoket');
 makePayment(API_KEY,'5000','Sam Smith','user@mail.com','255612345678','Halotel');
 
 //function used to verify payment
-verifyPayment(API_KEY, '4kjef4rifkdf');
+verifyPayment(API_KEY, '3j8zL7Tu7LhTMuR1S540f');
 
 ```
 
