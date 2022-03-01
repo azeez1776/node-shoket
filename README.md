@@ -18,9 +18,13 @@ npm install node-shoket
 
 ### Usage
 ```js
-const {makePayment} = require('node-shoket');
+const {makePayment, verifyPayment} = require('node-shoket');
 
+//function used to make payment
 makePayment(API_KEY,'5000','Sam Smith','user@mail.com','255612345678','Halotel');
+
+//function used to verify payment
+verifyPayment(API_KEY, '4kjef4rifkdf');
 
 ```
 
