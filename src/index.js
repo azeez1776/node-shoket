@@ -24,7 +24,7 @@ const makePayment = async(api_key, amount, customer_name, email, number_used, ch
     }
 };
 
-const verifyPayment = async() => {
+const verifyPayment = async(api_key, reference) => {
     try{
         const response = await fetch(`https://api.shoket.co/v1/verify/${reference}`,{
             method:'get',
@@ -40,5 +40,6 @@ const verifyPayment = async() => {
 }
 
 module.exports={
-    makePayment
+    makePayment,
+    verifyPayment
 };
