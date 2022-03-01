@@ -24,6 +24,10 @@ const makePayment = async(api_key, amount, customer_name, email, number_used, ch
     }
 };
 
+const verifyPayment = () => {
+    
+}
+
 module.exports={
     makePayment
 };
