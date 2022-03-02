@@ -24,7 +24,7 @@ const {makePayment, verifyPayment} = require('node-shoket');
 makePayment(API_KEY,'5000','Sam Smith','user@mail.com','255612345678','Halotel');
 
 //function used to verify payment
-verifyPayment(API_KEY, '4kjef4rifkdf');
+verifyPayment(API_KEY, '3j8zL7Tu7LhTMuR1S540f');
 
 ```
 
@@ -34,7 +34,7 @@ npm test
 ```
 
 ## Documentation
-The makePayment function is used to accept payments, the function has 6 parameters which are API_KEY, amount, customer_name, email, number_used and channel. 
+- The **makePayment** function is used to accept payments, the function has 6 parameters which are **API_KEY**, **amount**, **customer_name**, **email**, **number_used** and **channel**. 
 The parameters are as follows in the function:
 ```js
 makePayment(API_KEY, amount, customer_name, email, number_used, channel);
@@ -48,7 +48,7 @@ makePayment(API_KEY, amount, customer_name, email, number_used, channel);
 | Channel         | Yes      | Mobile-provider name which is used by the customer phone number.                                            |
 | Customer names  | Yes      | This is a customer full name                                                                                |
 
-The verifyPayment is used to verify the transaction conducted, the function has 2 parameters which are the API_KEY and the transaction reference. The parameters are arranged as follows:
+- The **verifyPayment** is used to verify the transaction conducted, the function has 2 parameters which are the **API_KEY** and the **transaction reference**. The parameters are arranged as follows:
 
 ```js
 verifyPayment(API_KEY, transaction_reference);
