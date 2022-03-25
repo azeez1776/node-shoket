@@ -2,7 +2,6 @@ const fetch = require('node-fetch');
 
 
 const makePayment = async(api_key, amount, customer_name, email, number_used, channel) => {
-
     try{
         const response = await fetch('https://api.shoket.co/v1/charge/',{
             method:'post',
@@ -17,10 +16,9 @@ const makePayment = async(api_key, amount, customer_name, email, number_used, ch
         });
 
         const data = await response.json();
-        console.log(data);
         return data;
-    }catch(err){
-        console.log(err)
+    }catch(error){
+        throw error;
     }
 };
 
@@ -32,10 +30,9 @@ const verifyPayment = async(api_key, reference) => {
         });
 
         const data = await response.json();
-        console.log(data);
         return data;
-    }catch(err){
-        console.log(err)
+    }catch(error){
+        throw error;
     }
 }
 
