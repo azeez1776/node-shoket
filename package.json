@@ -13,7 +13,7 @@
   "author": "Abdulaziz(Samatar) Abdi",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^3.2.3"
   },
   "devDependencies": {
     "jest": "^27.5.1",
