@@ -66,6 +66,7 @@ Please see [CONTRIBUTING](CODE_OF_CONDUCT.md) for details.
 ## Credits
 
 -   [Abdulaziz(Samatar) Abdi](https://github.com/azeez1776)
+-   [Louis Ngatale](https://github.com/LouisNgatale)
 -   [All Contributors](../../contributors)
 
 
